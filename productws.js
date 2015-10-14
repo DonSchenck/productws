@@ -22,10 +22,14 @@ function getProduct(req, res, next) {
         }
       })
 }
+function getVersion(req, res, next) {
+  res.send("1.0.0");
+}
 var server = restify.createServer({
   name: 'productws',
 });
 server.use(restify.bodyParser());
+server.get('/version', getVersion);
 server.get('/product', listProducts);
 server.get('/product/:id', getProduct);
 server.listen(8080, function() {
