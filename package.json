@@ -1,0 +1,7 @@
+{
+  "name" : "product_getter",
+  "version" : "1.0.0",
+  "description" : "Microservice example -- retrieves products",
+  "dependencies" : {"restify" : ">=0.0.0"},
+  "main" : "productws.js"
+}
