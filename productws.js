@@ -23,7 +23,7 @@ function getProduct(req, res, next) {
       })
 }
 function getVersion(req, res, next) {
-  res.send("1.0.0");
+  res.send("1.0.1");
 }
 var server = restify.createServer({
   name: 'productws',
